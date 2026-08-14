@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界の法人税の重み — 国際比較ダッシュボード</title>
+<meta name="description" content="世界各国の法人税の法定税率・実効税率・法人税収(GDP比/税収構成比)をグラフでわかりやすく比較。">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --accent: #2563eb;
+    --japan: #dc2626;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --bg: #f3f4f6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #fff;
+    padding: 3rem 1.5rem 2.5rem;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 .5rem; font-size: clamp(1.5rem, 4vw, 2.2rem); }
+  header p { margin: 0 auto; max-width: 46rem; opacity: .92; font-size: .95rem; }
+  main { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  nav.toc {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  nav.toc a { color: var(--accent); text-decoration: none; margin-right: 1.2rem; white-space: nowrap; }
+  nav.toc a:hover { text-decoration: underline; }
+  section.card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  section.card h2 { margin-top: 0; font-size: 1.3rem; border-left: 5px solid var(--accent); padding-left: .6rem; }
+  .explain { font-size: .92rem; color: var(--muted); }
+  .stats { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1rem 0; }
+  .stat {
+    flex: 1 1 180px;
+    background: #eff6ff;
+    border-radius: 8px;
+    padding: .7rem 1rem;
+  }
+  .stat .label { font-size: .78rem; color: var(--muted); }
+  .stat .value { font-size: 1.35rem; font-weight: 700; }
+  .stat.japan { background: #fef2f2; }
+  .stat.japan .value { color: var(--japan); }
+  .btn-row { margin: .5rem 0 1rem; }
+  .btn-row button {
+    border: 1px solid var(--accent);
+    background: #fff;
+    color: var(--accent);
+    border-radius: 999px;
+    padding: .35rem 1rem;
+    margin: 0 .3rem .3rem 0;
+    cursor: pointer;
+    font-size: .85rem;
+  }
+  .btn-row button.active { background: var(--accent); color: #fff; }
+  .chart-wrap { position: relative; width: 100%; }
+  details { margin-top: 1rem; }
+  details summary { cursor: pointer; color: var(--accent); font-size: .9rem; }
+  .table-wrap { max-height: 420px; overflow-y: auto; margin-top: .8rem; border: 1px solid #e5e7eb; border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+  th, td { padding: .45rem .8rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+  th { position: sticky; top: 0; background: #f9fafb; cursor: pointer; user-select: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.jpn td { background: #fef2f2; font-weight: 600; }
+  .source-note { font-size: .8rem; color: var(--muted); margin-top: .8rem; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: .85rem;
+    padding: 2rem 1rem 3rem;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>世界の法人税の重み</h1>
+  <p>「法人税が重い・軽い」は見方によって変わります。このサイトでは、<strong>法定税率</strong>・<strong>実効税率</strong>・<strong>法人税収のGDP比</strong>・<strong>総税収に占める割合</strong>の4つの指標で、世界各国をグラフ比較します。</p>
+</header>
+<main>
+  <nav class="toc">
+    <a href="#statutory">① 法定税率</a>
+    <a href="#effective">② 実効税率</a>
+    <a href="#revenue-gdp">③ 法人税収のGDP比</a>
+    <a href="#revenue-share">④ 税収構成比</a>
+    <a href="#summary">まとめ</a>
+  </nav>
+
+  <section class="card" id="statutory" data-indicator="statutory">
+    <h2>① 法定税率 (Statutory Tax Rate)</h2>
+    <p class="explain">企業の利益に課される「表定」の税率。地方税を含む複合税率で比較します。制度上の標準的な税率であり、優遇措置や控除は考慮されません。</p>
+    <div class="stats"></div>
+    <div class="btn-row"></div>
+    <div class="chart-wrap"><canvas></canvas></div>
+    <details><summary>全データを表で見る</summary><div class="table-wrap"><table></table></div></details>
+    <p class="source-note" data-source></p>
+  </section>
+
+  <section class="card" id="effective" data-indicator="effective_eatr">
+    <h2>② 実効税率 (EATR / EMTR)</h2>
+    <p class="explain">減価償却・控除など税制上の調整を考慮し、典型的な投資プロジェクトに実質的にかかる税率 (OECDのフォワードルッキング実効税率、2025年)。<strong>EATR</strong>は投資全体の平均的な負担率、<strong>EMTR</strong>は追加投資1単位あたりの負担率で、法定税率より実際の負担感に近い指標です。ボタンで切り替えられます。</p>
+    <div class="stats"></div>
+    <div class="btn-row"></div>
+    <div class="chart-wrap"><canvas></canvas></div>
+    <details><summary>全データを表で見る</summary><div class="table-wrap"><table></table></div></details>
+    <p class="source-note" data-source></p>
+  </section>
+
+  <section class="card" id="revenue-gdp" data-indicator="revenue_gdp">
+    <h2>③ 法人税収の対GDP比</h2>
+    <p class="explain">国の経済規模に対して、法人税がどれだけの税収を生んでいるか。企業部門の稼ぐ力や課税ベースの広さも反映します。</p>
+    <div class="stats"></div>
+    <div class="btn-row"></div>
+    <div class="chart-wrap"><canvas></canvas></div>
+    <details><summary>全データを表で見る</summary><div class="table-wrap"><table></table></div></details>
+    <p class="source-note" data-source></p>
+  </section>
+
+  <section class="card" id="revenue-share" data-indicator="revenue_share">
+    <h2>④ 総税収に占める法人税の割合</h2>
+    <p class="explain">国の税収全体のうち、法人税がどのくらいを占めるか。資源国などでは法人税への依存度が高くなる傾向があります。</p>
+    <div class="stats"></div>
+    <div class="btn-row"></div>
+    <div class="chart-wrap"><canvas></canvas></div>
+    <details><summary>全データを表で見る</summary><div class="table-wrap"><table></table></div></details>
+    <p class="source-note" data-source></p>
+  </section>
+
+  <section class="card" id="summary">
+    <h2>まとめ</h2>
+    <ul>
+      <li><strong>法定税率</strong>は制度の「額面」。日本は約30%で先進国の中では高めです。</li>
+      <li><strong>実効税率</strong>は控除等を考慮した実質負担。法定税率との差は国によって大きく異なります。</li>
+      <li><strong>GDP比・構成比</strong>は「国の財政が法人税にどれだけ依存しているか」を示し、税率の高さとは必ずしも一致しません。</li>
+    </ul>
+    <p class="explain">各指標の対象年・対象国数はデータソースによって異なります。国際比較の際は各国の税制 (地方税、中小企業向け軽減税率、資源課税など) の違いにもご留意ください。</p>
+  </section>
+</main>
+<footer>
+  <p>データ出典: <span id="footer-sources"></span> (取得日: <span id="generated"></span>)</p>
+  <p><a href="https://github.com/katzkawai/kklab-kimi-coporate-tax-rate">GitHub リポジトリ</a> / このサイトは公開データに基づく個人の可視化です。正確な税務判断には各国の一次情報をご確認ください。</p>
+</footer>
+
+<script>
+const MAJOR = ["JPN","USA","CHN","IND","DEU","FRA","GBR","ITA","CAN","KOR","AUS","BRA","MEX","IDN","TUR","SAU","ZAF","ARG","RUS","SGP","IRL","CHE","NLD"];
+const GROUPS = [
+  { key: "major", label: "日本+主要国", pick: rows => MAJOR.map(c => rows.find(r => r.code === c)).filter(Boolean).sort((a,b) => b.value - a.value) },
+  { key: "top",   label: "上位15か国",   pick: rows => [...rows].sort((a,b) => b.value - a.value).slice(0, 15) },
+  { key: "bottom",label: "下位15か国",   pick: rows => [...rows].sort((a,b) => a.value - b.value).slice(0, 15) },
+];
+
+const jpName = r => r.name_ja || r.name;
+const fmt = v => (Math.round(v * 10) / 10).toFixed(1);
+
+async function main() {
+  const res = await fetch("data/data.json");
+  const data = await res.json();
+  document.getElementById("generated").textContent = data.generated;
+  document.getElementById("footer-sources").textContent = data.sources.join(" / ");
+
+  document.querySelectorAll("section[data-indicator]").forEach(sec => {
+    if (sec.dataset.indicator === "effective_eatr") {
+      // EATR / EMTR 切替
+      const toggleRow = document.createElement("div");
+      toggleRow.className = "btn-row measure-row";
+      [["effective_eatr", "EATR (平均実効税率)"], ["effective_emtr", "EMTR (限界実効税率)"]].forEach(([key, label], i) => {
+        if (!data[key] || !data[key].rows.length) return;
+        const b = document.createElement("button");
+        b.textContent = label;
+        if (i === 0) b.classList.add("active");
+        b.onclick = () => {
+          toggleRow.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+          b.classList.add("active");
+          buildSection(sec, data[key]);
+        };
+        toggleRow.appendChild(b);
+      });
+      if (toggleRow.children.length > 1) sec.querySelector(".stats").before(toggleRow);
+      buildSection(sec, data.effective_eatr);
+      return;
+    }
+    const ind = data[sec.dataset.indicator];
+    if (!ind || !ind.rows.length) return;
+    buildSection(sec, ind);
+  });
+}
+
+function buildSection(sec, ind) {
+  if (sec._chart) { sec._chart.destroy(); sec._chart = null; }
+  const rows = ind.rows;
+  const jpn = rows.find(r => r.code === "JPN");
+  const avg = rows.reduce((s, r) => s + r.value, 0) / rows.length;
+  const rank = jpn ? 1 + rows.filter(r => r.value > jpn.value).length : null;
+
+  // 統計チップ
+  const stats = sec.querySelector(".stats");
+  stats.innerHTML = "";
+  const chips = [
+    { label: "対象国・地域数", value: rows.length },
+    { label: "単純平均", value: fmt(avg) + ind.unit },
+  ];
+  if (jpn) {
+    chips.push({ label: `日本 (${jpn.year}年)`, value: fmt(jpn.value) + ind.unit, japan: true });
+    chips.push({ label: "日本の順位", value: `${rank} / ${rows.length}位`, japan: true });
+  }
+  chips.forEach(c => {
+    const d = document.createElement("div");
+    d.className = "stat" + (c.japan ? " japan" : "");
+    d.innerHTML = `<div class="label">${c.label}</div><div class="value">${c.value}</div>`;
+    stats.appendChild(d);
+  });
+
+  // ボタン + グラフ
+  const btnRow = sec.querySelector(".btn-row:not(.measure-row)");
+  btnRow.innerHTML = "";
+  const canvas = sec.querySelector("canvas");
+  GROUPS.forEach((g, i) => {
+    const b = document.createElement("button");
+    b.textContent = g.label;
+    if (i === 0) b.classList.add("active");
+    b.onclick = () => {
+      btnRow.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      draw(g.pick(rows));
+    };
+    btnRow.appendChild(b);
+  });
+
+  function draw(picked) {
+    const labels = picked.map(jpName);
+    const values = picked.map(r => r.value);
+    const colors = picked.map(r => r.code === "JPN" ? "#dc2626" : "#2563eb");
+    const h = Math.max(280, picked.length * 26);
+    canvas.parentElement.style.height = h + "px";
+    if (sec._chart) sec._chart.destroy();
+    sec._chart = new Chart(canvas, {
+      type: "bar",
+      data: { labels, datasets: [{ data: values, backgroundColor: colors }] },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: ctx => fmt(ctx.parsed.x) + ind.unit } },
+        },
+        scales: { x: { title: { display: true, text: ind.unit }, beginAtZero: true } },
+      },
+    });
+  }
+  draw(GROUPS[0].pick(rows));
+
+  // 表 (ソート可能)
+  const table = sec.querySelector("table");
+  const sorted = [...rows].sort((a,b) => b.value - a.value);
+  function renderTable(list) {
+    table.innerHTML = `<thead><tr><th data-k="name_ja">国・地域</th><th class="num" data-k="value">値 (${ind.unit})</th><th class="num" data-k="year">年</th></tr></thead>` +
+      "<tbody>" + list.map(r => `<tr class="${r.code === "JPN" ? "jpn" : ""}"><td>${jpName(r)}</td><td class="num">${fmt(r.value)}</td><td class="num">${r.year}</td></tr>`).join("") + "</tbody>";
+    table.querySelectorAll("th").forEach(th => th.onclick = () => {
+      const k = th.dataset.k;
+      const asc = th.dataset.asc !== "1";
+      th.dataset.asc = asc ? "1" : "0";
+      renderTable([...list].sort((a,b) => {
+        const x = k === "name_ja" ? jpName(a) : a[k], y = k === "name_ja" ? jpName(b) : b[k];
+        return (x > y ? 1 : x < y ? -1 : 0) * (asc ? 1 : -1);
+      }));
+    });
+  }
+  renderTable(sorted);
+
+  const src = sec.querySelector("[data-source]");
+  src.textContent = "出典: " + ind.source + " (対象年: " + yearRange(rows) + ")";
+}
+
+function yearRange(rows) {
+  const ys = rows.map(r => r.year);
+  const min = Math.min(...ys), max = Math.max(...ys);
+  return min === max ? `${max}年` : `${min}〜${max}年、各国最新`;
+}
+
+main().catch(e => {
+  document.querySelector("main").insertAdjacentHTML("afterbegin",
+    `<p style="color:#dc2626">データの読み込みに失敗しました: ${e.message}</p>`);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+code,name,name_ja,rate,year
+ABW,Aruba,アルバ,22.0,2025
+AFG,Afghanistan,アフガニスタン,20.0,2025
+AGO,Angola,アンゴラ,25.0,2025
+AIA,Anguilla,アンギラ,0.0,2025
+ALA,Aland Islands,オーランド諸島,20.0,2025
+ALB,Albania,アルバニア,15.0,2025
+AND,Andorra,アンドラ,10.0,2025
+ARE,United Arab Emirates,アラブ首長国連邦,9.0,2025
+ARG,Argentina,アルゼンチン,35.0,2025
+ARM,Armenia,アルメニア,18.0,2025
+ASM,American Samoa,American Samoa,34.0,2025
+ATG,Antigua and Barbuda,アンティグア・バーブーダ,25.0,2025
+AUS,Australia,オーストラリア,30.0,2025
+AUT,Austria,オーストリア,23.0,2025
+AZE,Azerbaijan,アゼルバイジャン,20.0,2025
+BDI,Burundi,ブルンジ,30.0,2025
+BEL,Belgium,ベルギー,25.0,2025
+BEN,Benin,ベナン,30.0,2025
+BES,"Bonaire, Sint Eustatius and Saba","Bonaire, Sint Eustatius and Saba",25.8,2025
+BFA,Burkina Faso,ブルキナファソ,27.5,2025
+BGD,Bangladesh,バングラデシュ,27.5,2025
+BGR,Bulgaria,ブルガリア,10.0,2025
+BHR,Bahrain,バーレーン,0.0,2025
+BHS,Bahamas,バハマ,0.0,2025
+BIH,Bosnia and Herzegovina,ボスニア・ヘルツェゴビナ,10.0,2025
+BLM,Saint Barthelemy,Saint Barthelemy,0.0,2025
+BLR,Belarus,ベラルーシ,25.0,2025
+BLZ,Belize,ベリーズ,0.0,2025
+BMU,Bermuda,バミューダ,0.0,2025
+BOL,Plurinational State of Bolivia,ボリビア,25.0,2025
+BRA,Brazil,ブラジル,34.0,2025
+BRB,Barbados,バルバドス,9.0,2025
+BRN,Brunei Darussalam,ブルネイ,18.5,2025
+BTN,Bhutan,ブータン,25.0,2025
+BWA,Botswana,ボツワナ,22.0,2025
+CAF,Central African Republic,Central African Republic,30.0,2025
+CAN,Canada,カナダ,25.98,2025
+CHE,Switzerland,スイス,19.61,2025
+CHL,Chile,チリ,27.0,2025
+CHN,China,中国,25.0,2025
+CIV,Cote d'Ivoire,コートジボワール,25.0,2025
+CMR,Cameroon,カメルーン,33.0,2025
+COD,Democratic Republic of the Congo,コンゴ民主共和国,30.0,2025
+COG,Congo,コンゴ共和国,28.0,2025
+COK,Cook Islands,Cook Islands,20.0,2025
+COL,Colombia,コロンビア,35.0,2025
+COM,Comoros,コモロ,50.0,2025
+CPV,Cabo Verde,カーボベルデ,21.42,2025
+CRI,Costa Rica,コスタリカ,30.0,2025
+CUB,Cuba,キューバ,35.0,2025
+CUW,Curacao,キュラソー,22.0,2025
+CYM,Cayman Islands,ケイマン諸島,0.0,2025
+CYP,Cyprus,キプロス,12.5,2025
+CZE,Czechia,チェコ,21.0,2025
+DEU,Germany,ドイツ,30.06,2025
+DJI,Djibouti,ジブチ,25.0,2025
+DMA,Dominica,ドミニカ国,25.0,2025
+DNK,Denmark,デンマーク,22.0,2025
+DOM,Dominican Republic,ドミニカ共和国,27.0,2025
+DZA,Algeria,アルジェリア,26.0,2025
+ECU,Ecuador,エクアドル,25.0,2025
+EGY,Egypt,エジプト,22.5,2025
+ERI,Eritrea,エリトリア,30.0,2025
+ESP,Spain,スペイン,25.0,2025
+EST,Estonia,エストニア,22.0,2025
+ETH,Ethiopia,エチオピア,30.0,2025
+FIN,Finland,フィンランド,20.0,2025
+FJI,Fiji,フィジー,25.0,2025
+FLK,Falkland Islands (Malvinas),Falkland Islands (Malvinas),26.0,2025
+FRA,France,フランス,36.13,2025
+FRO,Faroe Islands,フェロー諸島,18.0,2025
+FSM,Federated States of Micronesia,Federated States of Micronesia,30.0,2025
+GAB,Gabon,ガボン,30.0,2025
+GBR,United Kingdom of Great Britain and Northern Ireland,イギリス,25.0,2025
+GEO,Georgia,ジョージア,15.0,2025
+GGY,Guernsey,ガーンジー,0.0,2025
+GHA,Ghana,ガーナ,25.0,2025
+GIB,Gibraltar,ジブラルタル,15.0,2025
+GIN,Guinea,ギニア,25.0,2025
+GMB,Gambia,Gambia,27.0,2025
+GNB,Guinea-Bissau,ギニアビサウ,25.0,2025
+GNQ,Equatorial Guinea,赤道ギニア,25.0,2025
+GRC,Greece,ギリシャ,22.0,2025
+GRD,Grenada,グレナダ,28.0,2025
+GRL,Greenland,グリーンランド,26.5,2025
+GTM,Guatemala,グアテマラ,25.0,2025
+GUM,Guam,グアム,21.0,2025
+GUY,Guyana,ガイアナ,25.0,2025
+HKG,"China, Hong Kong Special Administrative Region",香港,16.5,2025
+HND,Honduras,ホンジュラス,30.0,2025
+HRV,Croatia,クロアチア,18.0,2025
+HTI,Haiti,ハイチ,30.0,2025
+HUN,Hungary,ハンガリー,9.0,2025
+IDN,Indonesia,インドネシア,22.0,2025
+IMN,Isle of Man,マン島,0.0,2025
+IND,India,インド,30.0,2025
+IRL,Ireland,アイルランド,12.5,2025
+IRN,Islamic Republic of Iran,イラン,25.0,2025
+IRQ,Iraq,イラク,15.0,2025
+ISL,Iceland,アイスランド,20.0,2025
+ISR,Israel,イスラエル,23.0,2025
+ITA,Italy,イタリア,27.81,2025
+JAM,Jamaica,ジャマイカ,25.0,2025
+JEY,Jersey,ジャージー,0.0,2025
+JOR,Jordan,ヨルダン,20.0,2025
+JPN,Japan,日本,29.74,2025
+KAZ,Kazakhstan,カザフスタン,20.0,2025
+KEN,Kenya,ケニア,30.0,2025
+KGZ,Kyrgyzstan,キルギス,10.0,2025
+KHM,Cambodia,カンボジア,20.0,2025
+KIR,Kiribati,キリバス,30.0,2025
+KNA,Saint Kitts and Nevis,セントクリストファー・ネービス,33.0,2025
+KOR,Republic of Korea,韓国,26.4,2025
+KWT,Kuwait,クウェート,15.0,2025
+LAO,Lao People's Democratic Republic,ラオス,20.0,2025
+LBN,Lebanon,レバノン,17.0,2025
+LBR,Liberia,リベリア,25.0,2025
+LBY,Libya,リビア,20.0,2025
+LCA,Saint Lucia,セントルシア,30.0,2025
+LIE,Liechtenstein,リヒテンシュタイン,12.5,2025
+LKA,Sri Lanka,スリランカ,30.0,2025
+LSO,Lesotho,レソト,25.0,2025
+LTU,Lithuania,リトアニア,16.0,2025
+LUX,Luxembourg,ルクセンブルク,23.87,2025
+LVA,Latvia,ラトビア,20.0,2025
+MAC,"China, Macao Special Administrative Region",マカオ,12.0,2025
+MAF,Saint Martin (French Part),Saint Martin (French Part),20.0,2025
+MAR,Morocco,モロッコ,34.0,2025
+MCO,Monaco,モナコ,25.0,2025
+MDA,Republic of Moldova,モルドバ,12.0,2025
+MDG,Madagascar,マダガスカル,20.0,2025
+MDV,Maldives,モルディブ,15.0,2025
+MEX,Mexico,メキシコ,30.0,2025
+MKD,North Macedonia,北マケドニア,10.0,2025
+MLI,Mali,マリ,30.0,2025
+MLT,Malta,マルタ,35.0,2025
+MMR,Myanmar,ミャンマー,22.0,2025
+MNE,Montenegro,モンテネグロ,15.0,2025
+MNG,Mongolia,モンゴル,25.0,2025
+MNP,Northern Mariana Islands,Northern Mariana Islands,21.0,2025
+MOZ,Mozambique,モザンビーク,32.0,2025
+MRT,Mauritania,モーリタニア,25.0,2025
+MSR,Montserrat,モントセラト,30.0,2025
+MUS,Mauritius,モーリシャス,15.0,2025
+MWI,Malawi,マラウイ,30.0,2025
+MYS,Malaysia,マレーシア,24.0,2025
+NAM,Namibia,ナミビア,30.0,2025
+NCL,New Caledonia,ニューカレドニア,30.0,2025
+NER,Niger,ニジェール,30.0,2025
+NGA,Nigeria,ナイジェリア,30.0,2025
+NIC,Nicaragua,ニカラグア,30.0,2025
+NIU,Niue,Niue,30.0,2025
+NLD,Netherlands,オランダ,25.8,2025
+NOR,Norway,ノルウェー,22.0,2025
+NPL,Nepal,ネパール,25.0,2025
+NRU,Nauru,ナウル,25.0,2025
+NZL,New Zealand,ニュージーランド,28.0,2025
+OMN,Oman,オマーン,15.0,2025
+PAK,Pakistan,パキスタン,29.0,2025
+PAN,Panama,パナマ,25.0,2025
+PER,Peru,ペルー,29.5,2025
+PHL,Philippines,フィリピン,25.0,2025
+PNG,Papua New Guinea,パプアニューギニア,30.0,2025
+POL,Poland,ポーランド,19.0,2025
+PRI,Puerto Rico,プエルトリコ,37.5,2025
+PRT,Portugal,ポルトガル,30.5,2025
+PRY,Paraguay,パラグアイ,10.0,2025
+PSE,State of Palestine,パレスチナ,15.0,2025
+PYF,French Polynesia,フランス領ポリネシア,25.0,2025
+QAT,Qatar,カタール,10.0,2025
+ROU,Romania,ルーマニア,16.0,2025
+RUS,Russian Federation,ロシア,25.0,2025
+RWA,Rwanda,ルワンダ,28.0,2025
+SAU,Saudi Arabia,サウジアラビア,20.0,2025
+SDN,Sudan,スーダン,35.0,2025
+SEN,Senegal,セネガル,30.0,2025
+SGP,Singapore,シンガポール,17.0,2025
+SHN,Saint Helena,Saint Helena,25.0,2025
+SLB,Solomon Islands,ソロモン諸島,30.0,2025
+SLE,Sierra Leone,シエラレオネ,25.0,2025
+SLV,El Salvador,エルサルバドル,30.0,2025
+SMR,San Marino,サンマリノ,17.0,2025
+SOM,Somalia,ソマリア,15.0,2025
+SRB,Serbia,セルビア,15.0,2025
+SSD,South Sudan,South Sudan,30.0,2025
+STP,Sao Tome and Principe,サントメ・プリンシペ,25.0,2025
+SUR,Suriname,スリナム,36.0,2025
+SVK,Slovakia,スロバキア,24.0,2025
+SVN,Slovenia,スロベニア,22.0,2025
+SWE,Sweden,スウェーデン,20.6,2025
+SWZ,Swaziland,エスワティニ,25.0,2025
+SXM,Sint Maarten (Dutch part),シント・マールテン,34.5,2025
+SYC,Seychelles,セーシェル,25.0,2025
+SYR,Syrian Arab Republic,シリア,25.0,2025
+TCA,Turks and Caicos Islands,タークス・カイコス諸島,0.0,2025
+TCD,Chad,チャド,35.0,2025
+TGO,Togo,トーゴ,27.0,2025
+THA,Thailand,タイ,20.0,2025
+TJK,Tajikistan,タジキスタン,18.0,2025
+TKL,Tokelau,Tokelau,0.0,2025
+TKM,Turkmenistan,トルクメニスタン,8.0,2025
+TLS,Timor-Leste,東ティモール,10.0,2025
+TON,Tonga,トンガ,25.0,2025
+TTO,Trinidad and Tobago,トリニダード・トバゴ,30.0,2025
+TUN,Tunisia,チュニジア,20.0,2025
+TUR,Turkey,トルコ,25.0,2025
+TWN,Taiwan,台湾,20.0,2025
+TZA,United Republic of Tanzania,タンザニア,30.0,2025
+UGA,Uganda,ウガンダ,30.0,2025
+UKR,Ukraine,ウクライナ,18.0,2025
+URY,Uruguay,ウルグアイ,25.0,2025
+USA,United States of America,アメリカ合衆国,25.57,2025
+UZB,Uzbekistan,ウズベキスタン,15.0,2025
+VCT,Saint Vincent and the Grenadines,セントビンセント・グレナディーン,28.0,2025
+VEN,Bolivarian Republic of Venezuela,ベネズエラ,34.0,2025
+VGB,British Virgin Islands,英領バージン諸島,0.0,2025
+VIR,United States Virgin Islands,United States Virgin Islands,23.1,2025
+VNM,Viet Nam,ベトナム,20.0,2025
+VUT,Vanuatu,バヌアツ,0.0,2025
+WLF,Wallis and Futuna Islands,ウォリス・フツナ,0.0,2025
+WSM,Samoa,サモア,27.0,2025
+XKX,Republic of Kosovo,コソボ,10.0,2025
+YEM,Yemen,イエメン,20.0,2025
+ZAF,South Africa,南アフリカ,27.0,2025
+ZMB,Zambia,ザンビア,30.0,2025
+ZWE,Zimbabwe,ジンバブエ,25.75,2025

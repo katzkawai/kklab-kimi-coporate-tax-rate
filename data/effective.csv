@@ -1,0 +1,211 @@
+code,name,name_ja,measure,value,year
+AGO,Angola,アンゴラ,EATR,23.68,2025
+AGO,Angola,アンゴラ,EMTR,21.62,2025
+ALB,Albania,アルバニア,EATR,14.73,2025
+ALB,Albania,アルバニア,EMTR,15.55,2025
+AND,Andorra,アンドラ,EATR,9.5,2025
+AND,Andorra,アンドラ,EMTR,7.43,2025
+ARG,Argentina,アルゼンチン,EATR,32.35,2025
+ARG,Argentina,アルゼンチン,EMTR,26.69,2025
+ARM,Armenia,アルメニア,EATR,17.59,2025
+ARM,Armenia,アルメニア,EMTR,18.61,2025
+ATG,Antigua and Barbuda,アンティグア・バーブーダ,EATR,24.67,2025
+ATG,Antigua and Barbuda,アンティグア・バーブーダ,EMTR,30.37,2025
+AUS,Australia,オーストラリア,EATR,28.5,2025
+AUS,Australia,オーストラリア,EMTR,28.56,2025
+AUT,Austria,オーストリア,EATR,21.95,2025
+AUT,Austria,オーストリア,EMTR,20.77,2025
+AZE,Azerbaijan,アゼルバイジャン,EATR,20.95,2025
+AZE,Azerbaijan,アゼルバイジャン,EMTR,32.93,2025
+BEL,Belgium,ベルギー,EATR,23.39,2025
+BEL,Belgium,ベルギー,EMTR,19.05,2025
+BEN,Benin,ベナン,EATR,28.05,2025
+BEN,Benin,ベナン,EMTR,24.28,2025
+BGR,Bulgaria,ブルガリア,EATR,9.1,2025
+BGR,Bulgaria,ブルガリア,EMTR,4.44,2025
+BHS,Bahamas,バハマ,EATR,0.0,2025
+BHS,Bahamas,バハマ,EMTR,0.0,2025
+BIH,Bosnia and Herzegovina,ボスニア・ヘルツェゴビナ,EATR,9.21,2025
+BIH,Bosnia and Herzegovina,ボスニア・ヘルツェゴビナ,EMTR,5.25,2025
+BOL,Bolivia,ボリビア,EATR,26.64,2025
+BOL,Bolivia,ボリビア,EMTR,47.89,2025
+BRA,Brazil,ブラジル,EATR,32.53,2025
+BRA,Brazil,ブラジル,EMTR,36.64,2025
+BWA,Botswana,ボツワナ,EATR,31.32,2025
+BWA,Botswana,ボツワナ,EMTR,107.89,2025
+CAN,Canada,カナダ,EATR,23.89,2025
+CAN,Canada,カナダ,EMTR,16.14,2025
+CHE,Switzerland,スイス,EATR,18.42,2025
+CHE,Switzerland,スイス,EMTR,14.57,2025
+CHL,Chile,チリ,EATR,23.44,2025
+CHL,Chile,チリ,EMTR,4.51,2025
+CHN,China (People's Republic of),中国,EATR,23.01,2025
+CHN,China (People's Republic of),中国,EMTR,15.68,2025
+CMR,Cameroon,カメルーン,EATR,46.6,2025
+CMR,Cameroon,カメルーン,EMTR,184.6,2025
+COD,Democratic Republic of the Congo,コンゴ民主共和国,EATR,27.58,2025
+COD,Democratic Republic of the Congo,コンゴ民主共和国,EMTR,19.77,2025
+COL,Colombia,コロンビア,EATR,32.93,2025
+COL,Colombia,コロンビア,EMTR,32.59,2025
+CRI,Costa Rica,コスタリカ,EATR,28.24,2025
+CRI,Costa Rica,コスタリカ,EMTR,26.12,2025
+CUW,Curaçao,キュラソー,EATR,21.16,2025
+CUW,Curaçao,キュラソー,EMTR,20.99,2025
+CYM,Cayman Islands,ケイマン諸島,EATR,0.0,2025
+CYM,Cayman Islands,ケイマン諸島,EMTR,0.0,2025
+CYP,Cyprus,キプロス,EATR,11.4,2025
+CYP,Cyprus,キプロス,EMTR,5.92,2025
+CZE,Czechia,チェコ,EATR,20.31,2025
+CZE,Czechia,チェコ,EMTR,20.73,2025
+DEU,Germany,ドイツ,EATR,26.78,2025
+DEU,Germany,ドイツ,EMTR,11.13,2025
+DNK,Denmark,デンマーク,EATR,21.56,2025
+DNK,Denmark,デンマーク,EMTR,24.41,2025
+DOM,Dominican Republic,ドミニカ共和国,EATR,25.6,2025
+DOM,Dominican Republic,ドミニカ共和国,EMTR,24.15,2025
+ECU,Ecuador,エクアドル,EATR,23.34,2025
+ECU,Ecuador,エクアドル,EMTR,18.6,2025
+EGY,Egypt,エジプト,EATR,20.68,2025
+EGY,Egypt,エジプト,EMTR,13.38,2025
+ESP,Spain,スペイン,EATR,23.3,2025
+ESP,Spain,スペイン,EMTR,18.17,2025
+EST,Estonia,エストニア,EATR,18.7,2025
+EST,Estonia,エストニア,EMTR,0.0,2025
+FIN,Finland,フィンランド,EATR,19.8,2025
+FIN,Finland,フィンランド,EMTR,23.32,2025
+FRA,France,フランス,EATR,23.61,2025
+FRA,France,フランス,EMTR,14.97,2025
+GBR,United Kingdom,イギリス,EATR,22.55,2025
+GBR,United Kingdom,イギリス,EMTR,11.51,2025
+GGY,Bailiwick of Guernsey,ガーンジー,EATR,0.0,2025
+GGY,Bailiwick of Guernsey,ガーンジー,EMTR,0.0,2025
+GRC,Greece,ギリシャ,EATR,21.05,2025
+GRC,Greece,ギリシャ,EMTR,20.07,2025
+GTM,Guatemala,グアテマラ,EATR,23.38,2025
+GTM,Guatemala,グアテマラ,EMTR,18.89,2025
+HKG,Hong Kong (China),香港,EATR,14.28,2025
+HKG,Hong Kong (China),香港,EMTR,2.01,2025
+HND,Honduras,ホンジュラス,EATR,28.29,2025
+HND,Honduras,ホンジュラス,EMTR,26.61,2025
+HRV,Croatia,クロアチア,EATR,16.15,2025
+HRV,Croatia,クロアチア,EMTR,6.93,2025
+HUN,Hungary,ハンガリー,EATR,11.96,2025
+HUN,Hungary,ハンガリー,EMTR,18.98,2025
+IDN,Indonesia,インドネシア,EATR,21.56,2025
+IDN,Indonesia,インドネシア,EMTR,24.42,2025
+IMN,Isle of Man,マン島,EATR,0.0,2025
+IMN,Isle of Man,マン島,EMTR,0.0,2025
+IND,India,インド,EATR,24.0,2025
+IND,India,インド,EMTR,23.24,2025
+IRL,Ireland,アイルランド,EATR,12.36,2025
+IRL,Ireland,アイルランド,EMTR,13.21,2025
+ISL,Iceland,アイスランド,EATR,18.79,2025
+ISL,Iceland,アイスランド,EMTR,14.93,2025
+ISR,Israel,イスラエル,EATR,21.47,2025
+ISR,Israel,イスラエル,EMTR,16.63,2025
+ITA,Italy,イタリア,EATR,25.74,2025
+ITA,Italy,イタリア,EMTR,19.42,2025
+JAM,Jamaica,ジャマイカ,EATR,24.22,2025
+JAM,Jamaica,ジャマイカ,EMTR,26.41,2025
+JEY,Jersey,ジャージー,EATR,0.0,2025
+JEY,Jersey,ジャージー,EMTR,0.0,2025
+JPN,Japan,日本,EATR,28.36,2025
+JPN,Japan,日本,EMTR,29.26,2025
+KEN,Kenya,ケニア,EATR,27.17,2025
+KEN,Kenya,ケニア,EMTR,15.95,2025
+KOR,Korea,韓国,EATR,24.87,2025
+KOR,Korea,韓国,EMTR,22.0,2025
+LBR,Liberia,リベリア,EATR,29.75,2025
+LBR,Liberia,リベリア,EMTR,75.53,2025
+LIE,Liechtenstein,リヒテンシュタイン,EATR,10.18,2025
+LIE,Liechtenstein,リヒテンシュタイン,EMTR,-3.38,2025
+LTU,Lithuania,リトアニア,EATR,14.59,2025
+LTU,Lithuania,リトアニア,EMTR,7.83,2025
+LUX,Luxembourg,ルクセンブルク,EATR,22.54,2025
+LUX,Luxembourg,ルクセンブルク,EMTR,19.74,2025
+LVA,Latvia,ラトビア,EATR,17.0,2025
+LVA,Latvia,ラトビア,EMTR,0.0,2025
+MAC,Macau (China),マカオ,EATR,11.15,2025
+MAC,Macau (China),マカオ,EMTR,7.2,2025
+MEX,Mexico,メキシコ,EATR,27.63,2025
+MEX,Mexico,メキシコ,EMTR,20.29,2025
+MKD,North Macedonia,北マケドニア,EATR,9.3,2025
+MKD,North Macedonia,北マケドニア,EMTR,5.92,2025
+MLT,Malta,マルタ,EATR,28.8,2025
+MLT,Malta,マルタ,EMTR,-9.75,2025
+MSR,Montserrat,モントセラト,EATR,28.3,2025
+MSR,Montserrat,モントセラト,EMTR,26.68,2025
+MUS,Mauritius,モーリシャス,EATR,5.75,2025
+MUS,Mauritius,モーリシャス,EMTR,-54.91,2025
+MYS,Malaysia,マレーシア,EATR,23.42,2025
+MYS,Malaysia,マレーシア,EMTR,26.53,2025
+NAM,Namibia,ナミビア,EATR,31.42,2025
+NAM,Namibia,ナミビア,EMTR,56.38,2025
+NGA,Nigeria,ナイジェリア,EATR,26.74,2025
+NGA,Nigeria,ナイジェリア,EMTR,11.8,2025
+NIC,Nicaragua,ニカラグア,EATR,26.85,2025
+NIC,Nicaragua,ニカラグア,EMTR,12.89,2025
+NLD,Netherlands,オランダ,EATR,24.47,2025
+NLD,Netherlands,オランダ,EMTR,22.83,2025
+NOR,Norway,ノルウェー,EATR,21.41,2025
+NOR,Norway,ノルウェー,EMTR,23.21,2025
+NZL,New Zealand,ニュージーランド,EATR,26.86,2025
+NZL,New Zealand,ニュージーランド,EMTR,28.33,2025
+PAN,Panama,パナマ,EATR,23.33,2025
+PAN,Panama,パナマ,EMTR,18.47,2025
+PER,Peru,ペルー,EATR,29.17,2025
+PER,Peru,ペルー,EMTR,38.68,2025
+PNG,Papua New Guinea,パプアニューギニア,EATR,30.14,2025
+PNG,Papua New Guinea,パプアニューギニア,EMTR,44.16,2025
+POL,Poland,ポーランド,EATR,15.0,2025
+POL,Poland,ポーランド,EMTR,-9.47,2025
+PRT,Portugal,ポルトガル,EATR,27.53,2025
+PRT,Portugal,ポルトガル,EMTR,15.4,2025
+PRY,Paraguay,パラグアイ,EATR,9.44,2025
+PRY,Paraguay,パラグアイ,EMTR,7.0,2025
+QAT,Qatar,カタール,EATR,9.1,2025
+QAT,Qatar,カタール,EMTR,4.46,2025
+ROU,Romania,ルーマニア,EATR,14.41,2025
+ROU,Romania,ルーマニア,EMTR,6.44,2025
+SAU,Saudi Arabia,サウジアラビア,EATR,18.59,2025
+SAU,Saudi Arabia,サウジアラビア,EMTR,25.9,2025
+SEN,Senegal,セネガル,EATR,28.64,2025
+SEN,Senegal,セネガル,EMTR,29.92,2025
+SGP,Singapore,シンガポール,EATR,16.09,2025
+SGP,Singapore,シンガポール,EMTR,13.15,2025
+SLV,El Salvador,エルサルバドル,EATR,27.49,2025
+SLV,El Salvador,エルサルバドル,EMTR,18.93,2025
+SRB,Serbia,セルビア,EATR,14.44,2025
+SRB,Serbia,セルビア,EMTR,13.23,2025
+SVK,Slovak Republic,スロバキア,EATR,22.09,2025
+SVK,Slovak Republic,スロバキア,EMTR,14.87,2025
+SVN,Slovenia,スロベニア,EATR,20.13,2025
+SVN,Slovenia,スロベニア,EMTR,12.2,2025
+SWE,Sweden,スウェーデン,EATR,19.55,2025
+SWE,Sweden,スウェーデン,EMTR,17.12,2025
+SWZ,Eswatini,エスワティニ,EATR,25.7,2025
+SWZ,Eswatini,エスワティニ,EMTR,21.37,2025
+SYC,Seychelles,セーシェル,EATR,23.2,2025
+SYC,Seychelles,セーシェル,EMTR,17.33,2025
+TCA,Turks and Caicos Islands,タークス・カイコス諸島,EATR,0.0,2025
+TCA,Turks and Caicos Islands,タークス・カイコス諸島,EMTR,0.0,2025
+THA,Thailand,タイ,EATR,18.45,2025
+THA,Thailand,タイ,EMTR,12.06,2025
+TUN,Tunisia,チュニジア,EATR,18.19,2025
+TUN,Tunisia,チュニジア,EMTR,9.9,2025
+TUR,Türkiye,トルコ,EATR,22.33,2025
+TUR,Türkiye,トルコ,EMTR,9.56,2025
+UKR,Ukraine,ウクライナ,EATR,16.68,2025
+UKR,Ukraine,ウクライナ,EMTR,11.23,2025
+URY,Uruguay,ウルグアイ,EATR,24.24,2025
+URY,Uruguay,ウルグアイ,EMTR,26.61,2025
+USA,United States,アメリカ合衆国,EATR,22.14,2025
+USA,United States,アメリカ合衆国,EMTR,3.66,2025
+VGB,British Virgin Islands,英領バージン諸島,EATR,0.0,2025
+VGB,British Virgin Islands,英領バージン諸島,EMTR,0.0,2025
+VNM,Viet Nam,ベトナム,EATR,18.14,2025
+VNM,Viet Nam,ベトナム,EMTR,9.46,2025
+ZAF,South Africa,南アフリカ,EATR,24.38,2025
+ZAF,South Africa,南アフリカ,EMTR,13.08,2025
+ZMB,Zambia,ザンビア,EATR,42.12,2025
+ZMB,Zambia,ザンビア,EMTR,158.3,2025
