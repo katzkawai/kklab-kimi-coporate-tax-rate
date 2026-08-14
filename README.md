@@ -31,6 +31,10 @@ python3 -m http.server 8000
 # http://localhost:8000 を開く
 ```
 
+## このサイトについて
+
+このページは **Kimi K3** (Moonshot AIのAIエージェント) によって作成されました。データ収集・加工、サイト実装、GitHub Pagesへの公開までの一連の作業をAIが行っています。
+
 ## ライセンス
 
 コードはMITライセンス。データの利用条件は各出典のライセンスに従ってください (`data/SOURCES.md` 参照)。
