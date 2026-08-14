@@ -9,7 +9,7 @@
 
 ## 公開URL
 
-https://katzkawai.github.io/kklab-kimi-coporate-tax-rate/
+https://katzkawai.org/kklab-kimi-coporate-tax-rate/ (GitHub Pages、カスタムドメイン)
 
 ## ファイル構成
 
