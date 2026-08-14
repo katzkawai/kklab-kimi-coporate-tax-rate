@@ -84,6 +84,16 @@
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   tr.jpn td { background: #fef2f2; font-weight: 600; }
   .source-note { font-size: .8rem; color: var(--muted); margin-top: .8rem; }
+  .glossary dl { margin: 0; }
+  .glossary dt {
+    font-weight: 700;
+    margin-top: 1.1rem;
+    padding-top: .8rem;
+    border-top: 1px dashed #e5e7eb;
+  }
+  .glossary dt:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+  .glossary dt .en { font-weight: 400; color: var(--muted); font-size: .85rem; }
+  .glossary dd { margin: .3rem 0 0; font-size: .92rem; }
   footer {
     text-align: center;
     color: var(--muted);
@@ -106,6 +116,7 @@
     <a href="#revenue-share">④ 税収構成比</a>
     <a href="#summary">まとめ</a>
     <a href="#analysis">経済学的分析</a>
+    <a href="#glossary">用語集</a>
   </nav>
 
   <section class="card" id="statutory" data-indicator="statutory">
@@ -120,7 +131,7 @@
 
   <section class="card" id="effective" data-indicator="effective_eatr">
     <h2>② 実効税率 (EATR / EMTR)</h2>
-    <p class="explain">減価償却・控除など税制上の調整を考慮し、典型的な投資プロジェクトに実質的にかかる税率 (OECDのフォワードルッキング実効税率、2025年)。<strong>EATR</strong>は投資全体の平均的な負担率、<strong>EMTR</strong>は追加投資1単位あたりの負担率で、法定税率より実際の負担感に近い指標です。ボタンで切り替えられます。</p>
+    <p class="explain">減価償却・控除など税制上の調整を考慮し、典型的な投資プロジェクトに実質的にかかる税率 (OECDの<a href="#glossary-fwd">フォワードルッキング</a>実効税率、2025年)。<strong>EATR</strong>は投資全体の平均的な負担率、<strong>EMTR</strong>は追加投資1単位あたりの負担率で、法定税率より実際の負担感に近い指標です。ボタンで切り替えられます (用語の意味は<a href="#glossary">用語集</a>を参照)。</p>
     <div class="stats"></div>
     <div class="btn-row"></div>
     <div class="chart-wrap"><canvas></canvas></div>
@@ -182,6 +193,54 @@
     <p>日本は法定29.7% (226法域中57位)、EATR28.4% (105カ国中14位) と先進国の中では高めである一方、法人税収のGDP比4.4% (37/185位)、総税収比22.3% (50/185位) も米国 (10.9%)、ドイツ (9.9%)、フランス (7.9%) を大きく上回ります。つまり日本の財政は、景気変動に敏感な法人税への<strong>依存度が主要国の中で高い</strong>構造にあります。企業にとっての「重さ」と財政にとっての「頼りすぎ」が同居しており、税率競争力の確保と税収の安定化のバランスが課題といえます。</p>
 
     <p class="explain">※ 上記の数値はすべてこのページのデータ (出典: 各セクション末尾参照) に基づきます。EMTRが100%を超える国 (例: カメルーン184.6%) は、投資優遇措置と償却のタイミング差により追加投資の限界負担が逆転するOECD原データ上の既知の現象です。</p>
+  </section>
+
+  <section class="card glossary" id="glossary">
+    <h2>用語集</h2>
+    <p class="explain">このページで使っている税・経済の専門用語の解説です。</p>
+    <dl>
+      <dt id="glossary-fwd">フォワードルッキング / バックワードルッキング <span class="en">(forward-looking / backward-looking)</span></dt>
+      <dd>実効税率の計算には2つの方向性があります。<strong>フォワードルッキング (将来指向)</strong> は、「これから行う仮想的な投資プロジェクト」に各国の税制 (税率・減価償却・控除などの制度パラメータ) を当てはめて、将来かかるはずの税負担を理論計算する方法です。実績データに左右されず「その国の税制そのもの」の比較ができるのが利点で、OECDの実効税率 (このページの指標②) はこちらです。対する<strong>バックワードルッキング (過去指向)</strong> は、企業が実際に払った税額 ÷ 実際の利益で計算する方法で、実績を反映する一方、景気や企業構成の違いも混ざってしまいます。</dd>
+
+      <dt>法定税率 <span class="en">(statutory tax rate)</span></dt>
+      <dd>法律で定められた「表定」の税率。このページでは国税と地方税を合わせた<strong>複合税率</strong>で比較しています。控除や優遇措置を考慮しない制度上の数字なので、実際の負担とはずれることがあります (例: 日本の約29.7%は国税の法人税と地方法人税・事業税などの合計)。</dd>
+
+      <dt>実効税率 <span class="en">(effective tax rate)</span></dt>
+      <dd>法定税率に減価償却・控除・優遇措置などの効果を織り込んだ、企業が実質的に負担する税率。「額面」よりこちらのほうが実際の負担感に近い指標です。</dd>
+
+      <dt>EATR <span class="en">(実効平均税率 / Effective Average Tax Rate)</span></dt>
+      <dd>ある投資プロジェクト全体の利益に対して、平均して何%の税がかかるかを示す率。投資するかどうか・どの国に拠点を置くかという「大きな選択」に影響するとされます。</dd>
+
+      <dt>EMTR <span class="en">(実効限界税率 / Effective Marginal Tax Rate)</span></dt>
+      <dd>追加であと1単位だけ投資を増やした場合、その追加分にかかる税率。投資を「あとどれだけ増やすか」という限界的な判断に影響します。投資促進の優遇措置 (即時償却など) が強い国では極端に低くなり、制度設計次第では100%を超える逆転現象も起こりえます。</dd>
+
+      <dt>課税ベース <span class="en">(tax base)</span></dt>
+      <dd>税を計算する土台となる課税対象の範囲。税率が低くても課税ベースが広ければ (控除が少なければ) 税収は確保でき、逆に税率が高くても特例だらけなら税収は伸びません。「税率 × 課税ベース」の両方で負担の重さが決まります。</dd>
+
+      <dt>減価償却 / 即時償却 <span class="en">(depreciation / bonus depreciation)</span></dt>
+      <dd>設備などの投資額を耐用年数に分けて費用化するのが減価償却。これを初年度に全額 (または大部分) 費用化できるようにした投資促進策が即時償却 (米国では「ボーナスデプリシエーション」) で、投資した年の税負担を大きく下げるためEMTRに強く効きます。</dd>
+
+      <dt>租税競争 <span class="en">(tax competition / race to the bottom)</span></dt>
+      <dd>各国が企業や投資を誘致するために法人税率を競って引き下げる現象。「底なしの引き下げ競争 (race to the bottom)」とも呼ばれ、OECD加盟国の平均法定税率は2000年の32.3%から2025年の24.1%まで低下しました。</dd>
+
+      <dt>BEPS / 利益の国際移転 <span class="en">(Base Erosion and Profit Shifting)</span></dt>
+      <dd>多国籍企業が会計上の利益を低税率国の子会社に移し、高税率国での課税を逃れる行為。税率が低い国ほど利益が「集まって」見えるのはこのためで、アイルランドやシンガポールの高い税収依存度の背景のひとつです。OECD主導のBEPSプロジェクトが国際的な対策枠組みです。</dd>
+
+      <dt>グローバル・ミニマム課税 <span class="en">(Global Minimum Tax / Pillar Two)</span></dt>
+      <dd>2021年に140カ国以上が合意した国際課税ルールで、売上7.5億ユーロ超の多国籍企業グループに対し、各国で実効税率15%の最低課税を確保する仕組み。租税競争に「底」を設けるもので、指標②のデータにもこの制度を先取りした動きが表れています。</dd>
+
+      <dt>ラッファー効果 <span class="en">(Laffer effect)</span></dt>
+      <dd>「税率を下げると経済活動が活発になり、かえって税収が増えることがある」という考え方 (ラッファーカーブ)。低税率国の税収が高い現象の説明としてよく引かれますが、実際には経済活性化よりも利益の国際移転や立地選択による部分が大きいとされています。</dd>
+
+      <dt>タックスヘイブン <span class="en">(tax haven)</span></dt>
+      <dd>法人税率がゼロまたは極端に低く、企業のペーパーカンパニー設立地として使われる法域。このページの法定税率データでは、ケイマン諸島・バミューダ・バハマなど15法域が税率0%です。</dd>
+
+      <dt>資源ロイヤルティ <span class="en">(resource royalty)</span></dt>
+      <dd>石油・ガス・鉱物などの天然資源の採掘に対して政府が徴収する対価。資源国では資源企業への法人課税がこれと同じ役割を果たすため、税収構成比の上位 (ブルネイ95.6%、カタール80.5%など) が資源輸出国で占められ、資源価格の変動がそのまま財政の変動になります。</dd>
+
+      <dt>対GDP比 / 総税収構成比</dt>
+      <dd>このページの指標③④のこと。対GDP比は「経済全体の大きさに対して法人税収がどれくらいか」、総税収構成比は「国の税収のうち法人税が占める割合」です。前者は企業部門の稼ぐ力を、後者は財政の法人税への依存度を表します。</dd>
+    </dl>
   </section>
 </main>
 <footer>
